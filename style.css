@@ -57,7 +57,7 @@ section {
 }
 
 section#home {
-    background: url(surfvan.jpg) no-repeat center center/cover;
+    background: url(photos/surfvan.jpg) no-repeat center center/cover;
     color:#333;
     height: 400px;
     text-align: center;
