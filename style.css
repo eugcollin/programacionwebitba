@@ -6,7 +6,7 @@ body, h1, h2, p, ul, li {
 }
 h1 {
     font-size: 200%;
-    color: #427aa1;
+    color: #333;
     font-weight: bold;
 }
 h2 {
@@ -74,6 +74,7 @@ section h2 {
     margin-left: 20px;
     
 }
+
 
 .container {
   display: flex;
@@ -170,6 +171,126 @@ img {
     height: auto;
 }
 
+#contactarea {
+   display: grid;
+   place-items: center; 
+   height: 20vh;    
+}
+
+/*Style for buttons*/
+.button {
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bolder;
+    border: none;
+}
+
+.button#contactbutton1 {
+    background-color:white;
+    color:#333;
+}
+.button#contactbutton2{
+    background-color:#F1E6D7;
+    color:#333;
+}
+
+.button#send {
+    background-color:#F1E6D7;
+}
+
+
+
+
+/*Style for Contact page*/
+body#contact {
+    background-color:#e0f2f1;
+}
+.container#formcontainer {
+    width: 100%;
+    height: 80vh;
+    background-color: #427aa1;
+    display: grid;
+    place-items: center;
+}
+
+#formheading {
+    color:white;
+    text-align: center;
+    font-size: 250%;
+}
+
+.contactform {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+.contactform-input {
+    width: 500px;
+    height: 50px;
+    padding: 10px;
+    margin: 8px;
+    background-color:#f4eee5;
+    border: 1px #333;
+    font-size: 100%;
+    color: #427aa1;
+    border-radius: 10px;
+}
+
+.contactform-textarea {
+    width: 500px;
+    height: 180px;
+    padding: 10px;
+    margin: 8px;
+    background-color:#f4eee5;
+    border-radius: 10px;
+}
+
+.button button {
+    width: 120px;
+    padding: 10px;
+    text-align: center;
+    background-color:#F1E6D7
+}
+.message {
+    width: 100%;
+    position: relative;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+}
+.message .success {
+    font-size: 20px;
+    color:#e0f2f1;
+    position: absolute;
+    animation: buttons .3s linear;
+    display: none;
+}
+
+.message .danger {
+    font-size: 30px;
+    color:pink;
+    position: absolute;
+    transition: .3s;
+    animation: buttons .5s linear;
+    display: none;
+
+}
+
+@keyframes buttons {
+    0%{
+        transform: scale(0.1);
+    }
+    50%{
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
 /*Styles for mobile devices*/
 @media (max-width: 768px) {
     header, nav, section, footer {
@@ -199,6 +320,7 @@ img {
         padding: 10px;
         margin-top: 0px;
     }
+
 }
 
 /*Styles for smaller screens*/
