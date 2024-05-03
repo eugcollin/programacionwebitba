@@ -10,20 +10,23 @@
 
 <body id="contact">
     <header>
-    <h2 style="text-align:center;">A SURF SCHOOL</h2>
-    <nav>
-        <ul>
-            <li><a href="index.html#home">HOME</a></li>
-            <li><a href="index.html#about">ABOUT US</a></li>
-            <li><a href="index.html#surflessons">SURF LESSONS</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-    </nav>
-</header>
-
-<!--<section id="contactheader">
-    <h1>CONTACT US!</h1>
-</section>-->
+        <div class="logo">
+            <a href="#home">
+                <img src="photos/logo.png" alt="surf school logo">
+            </a>
+        </div>
+        <div class="title">
+        <h2 style="text-align:center;">A SURF SCHOOL</h2>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html#home">HOME</a></li>
+                <li><a href="index.html#about">ABOUT US</a></li>
+                <li><a href="index.html#surflessons">SURF LESSONS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
 
 <section id="form">
     <div class="container" id="formcontainer">
@@ -36,7 +39,7 @@
             <textarea class="contactform-textarea" id="message" placeholder="Message" cols="30" rows="10"></textarea>
             
             <div class="button">
-               <button type="button" class="button" id="send" onclick="message()">SEND</button> 
+               <button type="submit" class="button" id="send">SEND</button> 
             </div>
         </form>
 
@@ -47,6 +50,15 @@
     </div>
 </div>
 </section>
+
+<footer>
+    <p>&copy; 2024 A SURF SCHOOL</p>
+    <p>Phone: 0123 456789</p>
+    <p>Bookings: asurfschool@gmail.com</p>
+    <p>Instagram: @asurfschool</p>
+</footer>
+
 <script src="script.js"></script>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
 </html>
