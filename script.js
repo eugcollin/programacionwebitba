@@ -1,20 +1,19 @@
 document.addEventListener('DOMContentLoaded', function() {
     const success = document.getElementById('success');
     const danger = document.getElementById('danger');
-    var textFields = document.querySelectorAll('input[type="text"]'); // adding event listener for the text fields
+    var textFields = document.querySelectorAll('input[type="text"]'); 
     
     textFields.forEach(function(textField) {
         textField.addEventListener('input', function() {
             var value = this.value;
-            var correctValue = value.replace(/\s+/g, ' '); // Replace multiple spaces with a single one
-            this.value = correctValue; // Change the text field value with the corrected one 
+            var correctValue = value.replace(/\s+/g, ' '); 
+            this.value = correctValue;
         });
     });
 
 
     document.getElementById('contactform').addEventListener('submit', function(e) {
         e.preventDefault();
-        // Call message function to handle form submission
         message();
     });
 

@@ -43,7 +43,7 @@ header {
 .header-content {
     display: flex;
     align-items: center;
-    justify-content: center; /* Center content horizontally */
+    justify-content: center; 
 }
 
 .logo img {
@@ -62,7 +62,7 @@ header h2 {
 }
 
 .title {
-    flex: 2; /* Take up more space than the logo */
+    flex: 2; 
     text-align: left; 
     justify-content: left;
     margin-right: 50px;
@@ -70,7 +70,7 @@ header h2 {
 
 .navbar {
     display: flex;
-    flex: 1; /* Take up available space */
+    flex: 1; 
     align-items: center;
 }
 
@@ -138,12 +138,12 @@ section h2 {
 
 .container {
   display: flex;
-  flex-wrap: wrap; /*ensures that columns wrap up on smaller screens*/
+  flex-wrap: wrap; 
   margin-top: 50px;
 }
 
 .column {
-  flex: 1; /* This makes each column take up equal width */
+  flex: 1; 
 }
 
 .left {
@@ -168,8 +168,8 @@ section h2 {
 
 .image-container {
     display: flex;
-    justify-content: space-between; /* This spreads out the images equally */
-    align-items: center; /* This aligns images vertically in the middle */
+    justify-content: space-between; 
+    align-items: center; 
     padding: 30px 100px; 
     margin-bottom: 100px;
 }
@@ -210,16 +210,16 @@ section#surflessons h3{
 
 .image-box {
     width: 100%;
-    overflow: hidden; /* Hide any overflow content */
+    overflow: hidden; 
     display: flex;
-    justify-content: center; /* Center the image horizontally */
-    align-items: center; /* Center the image vertically */
+    justify-content: center; 
+    align-items: center; 
 }
 
 .image-box img {
     width: 100%;
-    height: 200px; /* Set a fixed height */
-    object-fit: cover; /* Maintain aspect ratio, cover the entire box */
+    height: 200px; 
+    object-fit: cover; 
     display: block;
 }
 
@@ -238,13 +238,17 @@ section#surflessons h3{
     padding: 50px;
     font-size: 150%;
     color:#427aa1;
-    text-align: left;
+    margin-top:20px;
 }
 
-#social-icons .fa-brands {
+.social-icons {
+    text-align: center;    
+}
+
+.social-icons .fa-brands {
    color: #427aa1; 
 }
-#social-icons .fa-brands:hover{
+.social-icons .fa-brands:hover{
     color:#E6DDBE;
 }
 
@@ -309,6 +313,12 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    text-align: left;
+}
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
 }
 
 .fa-brands {
@@ -317,6 +327,7 @@ footer {
   margin-bottom: 10px;
   cursor: pointer;
   color: white;
+  margin-right:0;
 }
 
 .fa-brands:hover {
@@ -334,6 +345,9 @@ footer {
 #contactbutton1{
     background-color:#E6DDBE;
     color:white;
+    width: 50%;
+    margin-top: 50px;
+    font-size: 100%;
 }
 
 #contactbutton1:hover{
@@ -342,7 +356,8 @@ footer {
 #contactbutton2{
     background-color:#427aa1;
     color:white;
-    width: 50%;
+    width: 30%;
+    font-size: 100%;
 }
 
 #contactbutton2:hover{
@@ -355,6 +370,7 @@ footer {
     width: 80%;
     min-height: 80vh; 
     background-color: #E6DDBE;
+    margin: 0 auto;
     margin-bottom: 50px;
     display: flex;
     justify-content: center; 
@@ -388,10 +404,11 @@ footer {
     padding: 10px;
     margin: 8px auto;
     background-color:white;
-    border: 1px #333; /*solid border for consistency*/
+    border: 1px #333; 
     font-size: 100%;
     color: #427aa1;
     border-radius: 10px;
+    font-family: Garamond, Georgia, serif;
 }
 
 .button#send {
@@ -400,6 +417,7 @@ footer {
     text-align: center;
     background-color:#427aa1;
     color: white;
+    font-weight: light;
 }
 
 #send:hover{
@@ -445,12 +463,8 @@ footer {
     }
 }
 
-/*Style for shopping cart
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}*/
+/*Style for shopping cart*/
+
 .cartContainer {
     display: flex;
     justify-content: space-between;
@@ -463,7 +477,7 @@ footer {
 #root {
     flex: 1;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust grid columns for responsiveness */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
 
@@ -520,6 +534,7 @@ button {
     width: 90%;
     border: none;
     border-radius: 5px;
+    padding:5px;
     background-color: #427aa1;
     color: white;
     cursor: pointer;
@@ -532,19 +547,19 @@ button:hover {
 }
 
 .sidebar {
-    width: 30%;
-    min-width: 350px;
+    width: 25%;
+    min-width: 300px;
     border-radius: 5px;
     background-color: #E6DDBE;
-    margin-left: 20px;
     padding: 30px;
+    margin-right: 50px;
     text-align: center;
 }
 
 .cartTitle {
     background-color: white;
     border-radius: 3px;
-    height: 40px;
+    height: 30px;
     padding: 10px;
     margin-bottom: 20px;
     align-items: center;
@@ -603,7 +618,7 @@ button:hover {
 
 .item-info {
     display: flex;
-    flex-direction: column; /* Adjusted to column for mobile */
+    flex-direction: column; 
     text-align: center;
 }
 
@@ -677,29 +692,29 @@ button:disabled {
     }
 
     .header-content {
-        flex-direction: column; /* Stack logo and title vertically */
-        align-items: center; /* Center items vertically */
+        flex-direction: column;
+        align-items: center; 
         justify-content: center;
         text-align: center;
         width: 100%;
     }
 
     .navbar {
-        justify-content: center; /* Center navbar horizontally */
-        align-items: center; /* Center navbar vertically */
-        flex-wrap: nowrap; /* Allow items to wrap to the next line if needed */
+        justify-content: center; 
+        align-items: center; 
+        flex-wrap: nowrap; 
         width: 80%;
-        margin-top: 10px; /* Add margin between title and navbar */
+        margin-top: 10px; 
     }
 
     .navbar ul {
         display: flex;
-        justify-content: center; /* Center items horizontally */
+        justify-content: center; 
         gap: 5px;
     }
 
     .navbar ul li {
-        margin: 0 5px; /* Adjust margin between items */
+        margin: 0 5px; 
         text-align: center;
     }
     .navbar ul li a {
@@ -721,7 +736,7 @@ button:disabled {
     }
     .image-container img {
         width: 90%;
-        margin: 10px auto; /* Centering images with margin */
+        margin: 10px auto; 
     }
 
     #contactcolumnleft, #contactcolumnright {
@@ -745,14 +760,19 @@ button:disabled {
     }
 
     .footer-contact-container a {
-        justify-content: center;
         text-align: center;
-        margin-right: 0;
+        align-items: center;
     }
 
-    .footer-logo,
-    .footer-links,
-    .footer-contact, .footer-about {
+    .footer-socials {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-left: 35px;
+        margin-bottom: 10px;
+    }
+
+    .footer-logo, .footer-links, .footer-contact, .footer-about {
         margin-bottom: 30px;
     }
 
@@ -761,51 +781,52 @@ button:disabled {
     }
 
     .cartContainer {
-        flex-direction: column; /* Stack columns vertically on smaller screens */
-        padding: 20px; /* Adjusted padding for smaller screens */
+        flex-direction: column; 
+        padding: 20px; 
         align-items: center;
     }
 
     #root {
         width: 100%;
         max-width: 600px;
-        grid-template-columns: 1fr; /* Change to single column for smaller screens */
+        grid-template-columns: 1fr; 
         justify-content: center;
     }
 
     .sidebar {
         width: 100%;
         max-width: 400px;
-        margin-top: 20px; /* Add margin to separate sidebar from items */
+        margin-top: 20px;
+        margin-right:0; 
     }
 
     .item-info {
-        flex-direction: row; /* Adjusted to row for better alignment */
+        flex-direction: row; 
         justify-content: space-between;
         align-items: center;
     }
 
     .bottom {
-        height: auto; /* Allow height to adjust based on content */
+        height: auto; 
     }
 
     .bottom h2 {
-        font-size: 16px; /* Decrease font size for better fit */
+        font-size: 16px; 
     }
 
 
     .quantity-button {
-        width: 20px; /* Increase button width for better touch area */
-        height: 20px; /* Increase button height for better touch area */
-        font-size: 14px; /* Decrease font size for better fit */
+        width: 20px; 
+        height: 20px; 
+        font-size: 14px; 
     }
 
     .fa-trash {
-        font-size: 20px; /* Increase trash icon size for better touch area */
+        font-size: 20px; 
     }
 
     .foot {
-        flex-direction: column; /* Stack footer content vertically */
+        flex-direction: column; 
         align-items: center;
         text-align: center;
     }
@@ -886,7 +907,6 @@ button:disabled {
         color: #427aa1;
     }
     
-    
     section#surflessons img {
         width:  350px;
         height: 250px;
@@ -896,7 +916,6 @@ button:disabled {
         padding:0px;
         margin: 10px;
         text-align: center;
-        
     }
     #contactcolumnleft, #contactcolumnright {
         padding: 10px;
@@ -915,5 +934,4 @@ button:disabled {
     #formheading {
         font-size: 200%;
     }
-
 }
